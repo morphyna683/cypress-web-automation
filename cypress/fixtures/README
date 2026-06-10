@@ -1,0 +1,144 @@
+<h1>3 etapas para automatizar testes com Cypress usando IA</h1>
+<h2>Prática de Automação de Testes Web com Cypress</2>
+
+
+Pré-requisitos, criação do projeto, instalação do Cypress, configuração inicial e o
+prompt usado na aula.
+
+
+QAZANDO | QA Automation da Aula 1 - Cypress
+
+
+Visão geral
+Na aula do Bootcamp QA Automation, vimos como criar um projeto do zero com Cypress e utilizar a IA
+para acelerar a criação da estrutura inicial dos testes.
+Este material é uma colinha prática com o passo a passo que seguimos durante a live. A ideia é te ajudar a
+repetir o processo no seu computador e já deixar a base pronta para começar a automatizar.
+Objetivo da aula
+Criar um projeto Cypress simples em JavaScript, configurar a estrutura inicial e preparar um
+arquivo de testes para implementação dos cenários.
+
+Etapa 1 - Pré-requisitos
+Antes de começar, instale as ferramentas abaixo. Elas são a base para criar, editar e executar o projeto de
+automação.
+Ferramenta Para que serve Link
+Node.js Permite criar o projeto Node e
+
+instalar o Cypress.
+
+https://nodejs.org/en/download/prebuilt-
+installer
+
+Visual Studio Code
+
+Editor usado para abrir a pasta e
+escrever os testes.
+
+https://code.visualstudio.com/Download
+
+GitHub Copilot
+Chat
+
+Extensão de IA usada para gerar a
+estrutura inicial do projeto.
+
+https://marketplace.visualstudio.com/ite
+ms?itemName=GitHub.copilot-chat
+
+QAZANDO | QA Automation Colinha da Aula 1 - Cypress
+
+
+Etapa 2 - Criar a pasta e abrir no VS Code
+Depois de instalar as ferramentas, crie uma pasta no seu computador para o projeto. Um exemplo
+simples de nome:
+qa-automation-cypress
+Em seguida, abra essa pasta no Visual Studio Code. Você pode fazer isso pelo menu do VS Code ou pelo
+terminal.
+File > Open Folder
+Ou, pelo terminal, dentro da pasta do projeto:
+code .
+Etapa 3 - Criar um projeto Cypress do zero com IA
+Durante a aula, seguimos a lógica dos comandos abaixo. Eles representam a criação do projeto e a
+instalação do Cypress.
+npm init -y
+npm install cypress
+Em uma configuração manual, também poderíamos abrir o Cypress para ele criar a configuração inicial:
+npx cypress open
+Mas aqui usamos a IA para gerar a configuração inicial diretamente, sem depender desse passo manual.
+
+QAZANDO | QA Automation Colinha da Aula 1 - Cypress
+
+Prompt usado na aula
+Copie e cole este prompt no GitHub Copilot Chat dentro do VS Code:
+Crie um projeto Cypress simples em JavaScript, como se eu tivesse rodado:
+npm init -y
+npm install cypress
+Depois crie a configuração inicial do Cypress no projeto, sem precisar usar npx cypress
+open.
+Crie a estrutura:
+cypress/
+e2e/
+teste.cy.js
+support/
+e2e.js
+commands.js
+fixtures/
+Crie também o arquivo:
+cypress.config.js
+No arquivo teste.cy.js, crie apenas uma estrutura básica com describe e alguns it vazios
+para eu implementar depois.
+No cypress.config.js, configure o projeto para testes E2E.
+Não crie Page Objects.
+Não use TypeScript.
+Não adicione configurações avançadas.
+Quero apenas o projeto básico com Cypress, configuração inicial e um arquivo de teste.
+
+QAZANDO | QA Automation Colinha da Aula 1 - Cypress
+
+Estrutura esperada do projeto
+Depois que a IA criar os arquivos, a estrutura deve ficar parecida com esta:
+qa-automation-cypress/
+cypress/
+e2e/
+teste.cy.js
+support/
+e2e.js
+commands.js
+fixtures/
+cypress.config.js
+package.json
+Exemplo de estrutura do arquivo de testes
+O arquivo teste.cy.js pode começar com uma estrutura simples como esta:
+describe('Testes Web com Cypress', () => {
+it('Deve acessar a página inicial', () => {
+// Implementar teste aqui
+})
+it('Deve validar um fluxo básico', () => {
+// Implementar teste aqui
+})
+})
+Neste primeiro momento, o objetivo não é criar testes complexos. O foco é entender a estrutura base de
+um projeto Cypress.
+Comandos úteis
+Para abrir o Cypress:
+npx cypress open
+Para rodar os testes pelo terminal:
+npx cypress run
+
+QAZANDO | QA Automation Colinha da Aula 1 - Cypress
+
+
+Aprendizado deste projeto:
+• Quais ferramentas precisa instalar.
+• Como criar uma pasta de projeto.
+• Como iniciar um projeto Node.js.
+• Como instalar o Cypress.
+• Como usar IA para criar a estrutura inicial.
+• Como criar o primeiro arquivo de testes.
+• Como preparar o projeto para começar a automatizar.
+
+Próximo passo
+Agora que você já tem a estrutura inicial criada, o próximo passo é começar a escrever testes
+reais. Continue praticando: automação se aprende fazendo.
+
+Continue praticando. Automação se aprende fazendo.
